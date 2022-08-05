@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
 	if (checkValue === "2")
 	{
 	    html01 = '<img src=' + obj.pic1 + '>';
-	} else {
+	} else if (checkValue === "1") {
 	    html01 = '<img src=' + obj.pic + '>';
 	}
 	html02 = '<img src=' + obj.ans + '>';
