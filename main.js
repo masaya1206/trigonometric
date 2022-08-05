@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     });
 
-
+/*
     //touchstartイベント
     touchArea.addEventListner("touchstart", function() => {
 	document.querySelector('#output02').innerHTML = html02;
@@ -113,7 +113,7 @@ window.addEventListener('DOMContentLoaded', function() {
     touchArea.addEventListner("touchcancel", function() => {
 	document.querySelector('#output02').innerHTML = '';
     });
-
+*/
 
 
 }); // End window.addEventListener
