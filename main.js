@@ -68,13 +68,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // ボタンをクリックしたときの処理を追加
     elCalc.addEventListener('click', function() {
 	obj = triangles[Math.floor( Math.random() * triangles.length)];
-	//	html01 = '<img src=' + obj.pic + '>';
-	if (checkValue === "2")
-	{
-	    html01 = '<img src=' + obj.pic1 + '>';
-	} else {
-	    html01 = '<img src=' + obj.pic + '>';
-	}
+	html01 = '<img src=' + obj.pic + '>';
 	html02 = '<img src=' + obj.ans + '>';
 	document.querySelector('#output01').innerHTML = html01;
 	document.querySelector('#output02').innerHTML = html02;
