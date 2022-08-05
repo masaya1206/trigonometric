@@ -68,6 +68,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // ボタンをクリックしたときの処理を追加
     elCalc.addEventListener('click', function() {
 	obj = triangles[Math.floor( Math.random() * triangles.length)];
+	checkValue = radioNodeList.value;
 	if (checkValue === "1")
 	{
 	    html01 = '<img src=' + obj.pic + '>';
