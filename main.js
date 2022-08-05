@@ -98,6 +98,22 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    //touchstartイベント
+    touchArea.addEventListner("touchstart", function() => {
+	document.querySelector('#output02').innerHTML = html02;
+    });
+
+    //touchmoveイベント
+    touchArea.addEventListner("touchmove", function() => {
+	eventpreventDefault();
+	document.querySelector('#output02').innerHTML = html02;
+    });
+    
+    //touchstartイベント
+    touchArea.addEventListner("touchcancel", function() => {
+	document.querySelector('#output02').innerHTML = '';
+    });
+
 
 
 }); // End window.addEventListener
