@@ -56,9 +56,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let elCalc = document.querySelector('#calc');
     let obj = triangles[Math.floor( Math.random() * triangles.length)];
-//    let selectMode = document.getElementsById('#select');
     let selectMode = document.querySelector('#select');
-    var radioNodeList = selectMode.select0;
+    let radioNodeList = selectMode.select0;
     var checkValue = radioNodeList.value;
 
     let html01 = '<img src=' + obj.pic + '>';
@@ -91,29 +90,9 @@ window.addEventListener('DOMContentLoaded', function() {
 	else if (checkValue === "2"){
 	    html01 = '<img src=' + obj.pic1 + '>';
 	}
-
-	
 	document.querySelector('#output01').innerHTML = html01;
 
     });
-
-/*
-    //touchstartイベント
-    touchArea.addEventListner("touchstart", function() => {
-	document.querySelector('#output02').innerHTML = html02;
-    });
-
-    //touchmoveイベント
-    touchArea.addEventListner("touchmove", function() => {
-	eventpreventDefault();
-	document.querySelector('#output02').innerHTML = html02;
-    });
-    
-    //touchstartイベント
-    touchArea.addEventListner("touchcancel", function() => {
-	document.querySelector('#output02').innerHTML = '';
-    });
-*/
 
 
 }); // End window.addEventListener
